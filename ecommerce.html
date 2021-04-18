@@ -8,12 +8,137 @@
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style>
     body{
-        background-color: rgb(191, 212, 243);
+        background-color: rgb(248, 227, 227);
+        font-family:'Times New Roman', Times, serif;
+        
 
     }
     .dropdown {
   float: left;
   overflow: hidden;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 679px;
+  position: relative;
+  
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 10%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.prev{
+  cursor: pointer;
+  position:absolute;
+  
+  width: 40px;
+  height: 60px;
+  padding: 16px;
+  margin-top: -185px;
+  margin-left: -160px;
+  color: rgb(168, 163, 163);
+  font-weight:none;
+  font-size: 60px;
+  background-position: left top;
+  transition: 3s ease-out;
+  border-radius: 85px;
+  user-select:none;
+
+}
+
+.next{
+  cursor: pointer;
+  position:absolute;
+  width: 40px;
+  height: 60px;
+  padding: 16px;
+  margin-top: -185px;
+  margin-right: -480px;
+  color:rgb(168, 163, 163);
+  background-position: left top;
+  
+ 
+  font-weight:none;
+  font-size: 60px;
+  transition: 3s ease;
+
+  border:1px;
+  border-radius: 85px;
+  user-select:none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  
+  
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: white;
+  color: #ed017f;
+  opacity: 0.2;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: -10px;
+  width: -10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 .sideform{
     height:360px;
@@ -21,7 +146,7 @@
     color:rgb(114, 113, 112);
     overflow-block:inherit;
     overflow-anchor:unset;
-    background-color: rgb(248, 245, 245);
+    background-color: whitesmoke;
 
 
 }
@@ -98,6 +223,7 @@ li {
   
   
 }
+a.n1:hover,a.n1:active{text-decoration: underline; co}
 a.ex1:hover, a.ex1:active {color: rgb(209, 100, 191);}
 a.ex2:hover, a.ex2:active {color: black;}
 
@@ -107,11 +233,10 @@ nav a{
     padding: 40px; 
 
 }
-a:hover{
-    background:rgb(252, 251, 252);
-    
+a:link{text-decoration: none;}
+a:hover{text-decoration: underline;}
+a.num1:hover{text-decoration: underline;}
 
-}
 form.example input[type=text] {/*/ for input/*/
   padding: 7px;
   font-size: 17px;
@@ -129,9 +254,9 @@ form.example button { /*/ for button/*/
   float: left;
   width: 7%;
   padding: 7px;
-  height: 35px;
+  height: 36px;
   ;
-  background: #d6861c;
+  background-color: rgb(250, 163, 1);
   color: white;
   font-size: 17px;
   border-radius:  2px 10px 5px 0px;
@@ -170,7 +295,7 @@ li a {
   </nav>
     
  <nav>   
-<ul style="background-color:#ed017f; height: 60px; margin-left: -8px;margin-top: 0px; margin-right: -6px;">
+<ul style="background-color:#23395d; height: 60px; margin-left: -8px;margin-top: 0px; margin-right: -6px;">
    
   <li class="ex1"><a href="#home" style = "text-decoration: none ; font-family: sans-serif; font-size: 25; font-style: italic; color: tomato; font-weight: bolder; padding: 20px; transition: 3s;"">CY+ </a></li>
   
@@ -195,37 +320,69 @@ li a {
   <div class="dropdown-content" style = "margin-left: 370px;">
       <br>
       
-      <button style="background-color: rgb(207, 148, 39);; width: 170px; height: 40px; border-style:none; display:inline-block; border-radius: 3px; margin-left: 4px; color:whitesmoke">LOGIN</button>
+      <button style="background-color: #152238; width: 170px; height: 40px; border-style:none; display:inline-block; border-radius: 3px; margin-left: 4px; color:whitesmoke">LOGIN</button>
       <p style="color:grey;margin-left: 8px;">_______ OR _______</p>
-      <button style="background-color: rgb(231, 228, 222);; width: 170px; height: 40px; border-style:none; display:inline-block; border-radius: 3px; margin-left: 4px; color:rgb(207, 148, 39);">SIGN UP</button>
-    <a href="#" style="font-size:12px;"><i class="fa fa-user icon" style="color:rgb(207, 148, 39); font-size: 16px;"> &nbsp;</i>Account</a>
-    <a href="#" style="font-size:12px;"><i class="fa fa-credit-card" style="color:rgb(207, 148, 39); font-size: 16px;"> &nbsp;</i>Orders</a>
-    <a href="#" style="font-size:12px;"><i class="fa fa-heart" style="color:rgb(207, 148, 39); font-size: 16px;"> &nbsp;</i>Saved Items</a>
+      <button style="background-color: rgb(231, 228, 222);; width: 170px; height: 40px; border-style:none; display:inline-block; border-radius: 3px; margin-left: 4px; color:#152238;">SIGN UP</button>
+    <a href="#" style="font-size:12px;"><i class="fa fa-user icon" style="color:#3F5B66; font-size: 16px;"> &nbsp;</i>Account</a>
+    <a href="#" style="font-size:12px;"><i class="fa fa-credit-card" style="color:#3F5B66; font-size: 16px;"> &nbsp;</i>Orders</a>
+    <a href="#" style="font-size:12px;"><i class="fa fa-heart" style="color:#3F5B66;font-size: 16px;"> &nbsp;</i>Saved Items</a>
   </div>
-  <li><button href="%"  style="text-decoration: none;  color: white; background-color: rgb(207, 148, 39);margin: 10px; padding:10px; cursor: pointer;  border:none; border-style:none; display:inline-block; border-radius: 3px;"  >Checkout <i class="fa fa-shopping-cart"></i></button></li>
+  <li><button href="%"  style="text-decoration: none;  color: white; background-color:rgb(250, 163, 1); margin: 10px; padding:10px; cursor: pointer;  border:none; border-style:none; display:inline-block; border-radius: 3px;"  ><i class="fa fa-shopping-cart">&nbsp;</i>Checkout </button></li>
   
 </ul>
 </nav>
 <nav>
-<ul style="background-color: rgba(179, 90, 156, 0.664); margin-left: -8px; margin-right: -6px;" >
+<ul style="background-color:#152238;margin-left: -8px; margin-right: -6px;" >
     <li><span style="font-size:25px;cursor:pointer; color:rgba(250, 250, 244, 0.664); "     onclick="openNav()" >&#9776; </span></li>
     <li><a href="#contact" class="ex2" style = "text-decoration: none; margin-left: 10px; transition: 3s; ">Store Locator</a></li>
     <li><a href="#about" class="ex2" style = "text-decoration: none; padding-left:48px; transition: 3s;">Sell on Cy+</a></li>
     <form class="example" action="/action_page.php" style="margin:auto;max-width:700px">
     
-        <input type="text"  name="search2" placeholder="Search for products,brands and categories..." style="border-radius: 3px;">
+        <input type="text"  name="search2" placeholder="Search for products,brands and categories..." style="border-radius: 3px; font-family: 'Times New Roman', Times, serif;">
         <button type="submit" style="border-radius: 3px;"><i class="fa fa-search"></i></button>
        
       </form>
       <li><a href="#contact" class="ex2" style = "text-decoration: none; width:85% ; padding-left:35px; transition: 3s;">Phones and Acessories</a></li>
-    <li><a href="#about" class="ex2" style = "text-decoration: none; width:110%; transition: 3s; ">Other categories</a></li>
+    <li><a href="#about" class="ex2" style = "text-decoration: none; width:110%; transition: 3s; margin-left: 40px;">Other categories</a></li>
 </ul>
+<div class="slideshow-container" style="margin-left: 169px;  ">
+
+
+    
+  <div class="mySlides1">
+    <img src="dreamteam.jpeg" style="width:199.9% ;height: 250px;margin-left:-180px; background-color:black;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img_snow_wide.jpg" style="width:200%;height: 250px; margin-left:-180px;background-color:black;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img_mountains_wide.jpg" style="width:200%;height: 250px; margin-left:-180px;background-color:black;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#x2039;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#x203A;</a>
+</div>
+
 </nav>
-<nav style="background-color:rgba(199, 223, 230, 0.74)">
-<div class="sideform" style="margin-top: 250px;">
+<nav style="background-color:whitesmoke; margin-top: -20px;">
+<div class="sideform" style="margin-top: 80px;">
   <ul>
-    <li><h2 style="margin-left: 30px;font-size: 18px;">Shop top Categories</h2></li>
+    <li><h2 style="margin-left: 30px;font-size: 18px;">Shop by Categories</h2></li>
   </ul>
+  <div>
+    <li><a href="" style="color: black;  font-size: 13px; text-decoration: none; margin-left: 15px"><img src="hp.jpg" style =" height: 80px;"> Computer & Accessories </a>
+      <li><a href="" style="color: black; font-size: 13px; text-decoration: none; "><img src="toys.jpg" style =" height: 90px; margin-left: -13px;"> Toys & Games</a>
+        
+  </div>
+  
+  <div>
+    <li><a href=""  style="color: black; font-size: 13px; text-decoration: none; margin-left: 15px"><img src="xbox.jpg" style =" height: 80px;"> Video Games</a>
+      <li><a href=""  style="color: black; font-size: 13px; text-decoration: none; "><img src="books.jpg" style ="height: 80px;">Books</a>
+       <br> <br>
+  </div>
+  <a href="" class="num1" style=" color:#152238;  ">  Shop Now </a>
 
 
 
@@ -234,18 +391,49 @@ li a {
   <ul>
     <li><h2 style="margin-left: 30px;font-size: 18px;">Explore Cyprus Homes</h2></li>
   </ul>
-   
+  <a href="" style="color: black;">shop</a>
 </div> 
 <div class="sideform" style="margin-left: 690px; margin-top: -360px;">
   <ul>
     <li><h2 style="margin-left: 30px; font-size: 18px;">Beauty Picks</h2></li>
   </ul>
+    <div>
+      
+        <li><a href="" style="color: black; font-size: 13px; text-decoration: none; "><img src="makeup.jpg" style =" height: 220px; margin-top: -140px;"> </a>
+          <a href="" class="num1" style=" margin-top: 38px; color:#152238; text-overflow: ellipsis ; ">  Shop Now </a>
+    </div>
+    
 
 </div>
 <div class="sideform" style="margin-left: 1030px; margin-top: -360px;">
+  <div class="slideshow-container">
   <ul>
     <li><h2 style="margin-left: 30px; font-size: 18px;">Men CLoths</h2></li>
+    <div class="mySlides fade">
+    <a href=""><img src="mens.jpg" style=" height: 220px; margin-left: -30px;"></a>
+  </div>
+  <div class="mySlides fade">
+    <a href=""><img src="blackjeans.jpg" style="height: 220px; margin-left: -30px;"></a>
+  </div>
+  <div class="mySlides fade">
+    <a href=""><img src="sports.jpg" style="height: 220px; margin-left: -30px;"></a>
+  </div>
+  <div class="mySlides fade">
+    <a href=""><img src="casual.jpg" style=" height: 220px; margin-left: -30px;"></a>
+  </div>
+
   </ul>
+
+ 
+  <a href="" class="num1" style=" margin-top: -30px; color:#152238; text-overflow: ellipsis ; ">  Shop Now </a>
+  
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
 
 
 </div>
@@ -274,11 +462,57 @@ li a {
     
     
   </ul>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+	 
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+     
+
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      
+    }
+	
+    </script>
+	<script>
+	var slideIndexx= [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlidexs(1, 0);
+showSlidexs(1, 1);
+
+function plusSlides(n, no) {
+  showSlidexs(slideIndexx[no] += n, no);
+}
+
+function showSlidexs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndexx[no] = 1}    
+  if (n < 1) {slideIndexx[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndexx[no]-1].style.display = "block";  
+}
+</script>
+
   
 
 
-
-    
 
 </body>
 </html>
