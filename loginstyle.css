@@ -1,0 +1,94 @@
+body{ background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+
+}
+.sideform{
+    margin-top: 50px;
+    margin: auto;
+    height:730px;
+    width: 340px;
+    margin-top: 30px;
+    background-color: #23395d;
+    
+   
+    border-radius: 7px;
+    border: 1px solid rgb(211, 210, 210);
+    
+    
+   
+
+
+}
+.invalid-feedback{
+    color:red;
+    margin-left: 11px;
+}
+.sidelogin{
+    margin-top: 50px;
+    margin: auto;
+    height:440px;
+    width: 340px;
+    margin-top: 30px;
+    background-color: #23395d;
+    
+   
+    border-radius: 7px;
+    border: 1px solid rgb(211, 210, 210);
+    
+    
+   
+
+
+}
+.echocolor{
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+
+}
+h3{
+    color: white;
+    margin-left: 11px;
+
+}
+label{
+   color:white;
+    margin-left: 11px;
+    font-weight: bold;
+    font-weight: 12px;
+}
+.resize{
+    width: 310px;
+    
+    margin-left: 11px;
+
+    
+}
+.invalid-feedbacks{
+    background-color: rgb(230, 195, 195);
+    color:red;
+    width:310px;
+    
+}
+.btnsubmit{
+    width: 310px;
+    height: 30px;
+    margin-left: 11px;
+    border-radius: 3px;
+    background-color:rgb(250, 163, 1);
+    color:white;
+    display: inline-block;
+    border-style: none;
+}
+p{
+    color:white ;
+    margin-left: 11px;
+    font-size: 11px;
+   
+}
+img{
+    width: 80px;
+    margin-left: 100px;
+
+}
